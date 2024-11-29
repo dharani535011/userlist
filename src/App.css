@@ -1,0 +1,200 @@
+*{
+  margin: 0px;
+  background-color: rgb(230, 238, 238);
+}
+body{
+  overflow-x: hidden;
+}
+.userhead{
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.userbody{
+  margin-top: 50px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.useradd{
+  position: fixed;
+  top: 50px;
+  right: 20%;
+  button{
+    border: none;
+    background-color: rgb(25, 237, 25);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:active{
+    background-color: rgb(138, 234, 138);
+  }
+}
+
+.usertable {
+  margin-top: 20px;
+
+  
+  max-width: 100%;
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+
+    thead {
+      tr {
+        font-weight: bold;
+        border-top: 2px solid gray;
+      }
+      td {
+        padding: 0px 20px 20px 0px;
+      }
+    }
+
+    tbody {
+      tr {
+        border-top: 1px solid rgb(0, 0, 0);
+      }
+
+      td {
+        padding: 0px 20px 20px 0px;
+      }
+
+      td:nth-child(6) {
+        text-align: center;
+        display: flex;
+        gap: 10px;
+
+        button:nth-child(1) {
+          background-color: yellow;
+          color: black;
+        }
+
+        button:nth-child(2) {
+          background-color: red;
+        }
+
+        button {
+          border: 0px;
+          border-radius: 3px;
+          font-weight: 600;
+          width: 40px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .useradd {
+    right: 20px;
+  }
+
+  .userbody {
+    width: 95%;
+  }
+
+  .usertable {
+    table {
+      font-size: 15px; 
+      thead{
+         td{
+          padding: 0px 10px 10px 0px;
+         }
+      }
+      tbody{
+         td{
+          padding: 0px 10px 10px 0px;
+          margin-bottom: 10px;
+         }
+      }
+    }
+
+    td:nth-child(6) {
+      flex-direction: column; 
+      gap: 5px;
+    }
+
+    td {
+      padding: 5px; 
+    }
+  }
+}
+
+
+/* .usertable {
+  margin-top: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 10px; 
+
+    thead {
+      tr {
+        font-weight: bold;
+        border-top: 2px solid gray; 
+      }
+      td {
+        padding:0px 20px 20px 0px;  
+      }
+    }
+
+    tbody {
+      tr {
+        border-top: 1px solid rgb(0, 0, 0); 
+      }
+
+      td {
+        padding:0px 20px 20px 0px; 
+      }
+      td:nth-child(6){
+        text-align: center;
+        display: flex;
+        gap: 10px;
+        button:nth-child(1){
+          background-color: yellow;
+          color: black;
+        }
+        button:nth-child(2){
+          background-color: red;
+        }
+        button{
+          border: 0px;
+          border-radius: 3px;
+          font-weight: 600;
+          width: 40px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+} */
+
+
+/* @media screen and (max-width:758px) {
+   .useradd{
+    right: 20px;
+   }
+   .userbody{
+    width: 95%;
+   }
+} */
+@media screen and (max-width:430px) {
+.usertable{
+     table{
+      font-size: 12px;
+     }
+}
+}
