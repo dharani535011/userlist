@@ -1,6 +1,6 @@
 *{
   margin: 0px;
-  background-color: rgb(230, 238, 238);
+  background-color: rgb(213, 234, 234);
 }
 body{
   overflow-x: hidden;
@@ -131,66 +131,79 @@ body{
   }
 }
 
+.useraddandupdate{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(129, 69, 69, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-/* .usertable {
-  margin-top: 20px;
-
-  table {
-    width: 100%;
-    border-collapse: separate; 
-    border-spacing: 10px; 
-
-    thead {
-      tr {
-        font-weight: bold;
-        border-top: 2px solid gray; 
-      }
-      td {
-        padding:0px 20px 20px 0px;  
-      }
-    }
-
-    tbody {
-      tr {
-        border-top: 1px solid rgb(0, 0, 0); 
-      }
-
-      td {
-        padding:0px 20px 20px 0px; 
-      }
-      td:nth-child(6){
-        text-align: center;
-        display: flex;
-        gap: 10px;
-        button:nth-child(1){
-          background-color: yellow;
-          color: black;
-        }
-        button:nth-child(2){
-          background-color: red;
-        }
-        button{
-          border: 0px;
-          border-radius: 3px;
-          font-weight: 600;
-          width: 40px;
-          color: white;
-          cursor: pointer;
-        }
-      }
-    }
+}
+.userdetials{
+  background-color: rgb(140, 214, 214);
+  width: 400px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.userinput{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  gap: 10px;
+  width: 100%;
+  background-color: rgb(140, 214, 214);
+  input{
+    width: 90%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
   }
-} */
+  input:focus{
+    outline: none;
+  }
+  input::placeholder{
+    font-size: larger;
+  }
+}
+.userbutton{
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  background-color:  rgb(140, 214, 214);
+  justify-content: space-between;
+  button{
+    border: none;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 70px;
+  }
+  button:nth-child(2){
+    background-color: blue;
 
-
-/* @media screen and (max-width:758px) {
-   .useradd{
-    right: 20px;
-   }
-   .userbody{
-    width: 95%;
-   }
-} */
+  }
+  button:nth-child(1){
+    background-color: red;
+  }
+}
+@media screen and (max-width:550px) {
+.userdetials{
+  width: 90%;
+}
+}
 @media screen and (max-width:430px) {
 .usertable{
      table{
